@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int d;
+	float L;
+	cin >> d;
+	L=3.14*d;
+	cout << L;
+	
+	return 0;
+}

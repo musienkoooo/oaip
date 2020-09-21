@@ -4,14 +4,12 @@ using namespace std;
 int main()
 {
 	int a, b, s, P;
-	cin >> a >> b;
+	cout << "a = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
 	P = (a + b) * 2;
 	s = a * b;
 	cout << "P=" << P << " " << "S=" << s;
 	return 0;
 }
-       
-       
-       
-       
-       

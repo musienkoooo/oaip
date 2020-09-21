@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  int   a, b, s, r, p;//a и b-два введённых числа, s-сумма, r-разность, p-произведение их модулей
+  float f;//f-частное модулей
+  int aa, bb;//aa и bb-модули введённых чисел
+  cout << "a=";
+  cin >> a;
+  cout << "b=";
+  cin >> b;
+  aa=abs(a);
+  bb=abs(b);
+  cout << "|a|=" << aa << " |b|=" << bb;
+  s = aa + bb;
+  r = aa - bb;
+  p = aa * bb;
+  f = (float)aa / bb;
+  cout << "\nCумма=" << s << "\nРазность=" << r << "\nПроизведение=" <<  p <<  "\nЧастное=" << f;
+	return 0;
+}

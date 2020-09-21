@@ -1,21 +1,22 @@
 #include <iostream>
-
 using namespace std;
 
 int main()
 {
-	
-  int   a2, b2, s, r, p;
-  float a, b, f;
-  cin >> a >> b;
+ setlocale(LC_ALL, "Russian");	
+  int   a, b, a2, b2, s, r, p;//a и b-два введенных числа, a2 и b2-их квадраты; s-сумма; r-разность; p-произведение квадратов
+  float f;//f-частное квадратов
+  cout << "a=";
+  cin >> a;
+  cout << "b=";
+  cin >> b;
+  cout << "a^2=" << a*a << " b^2=" << b*b;
   a2 = a * a;
   b2 = b * b;
   s = a2 + b2;
-  r = abs(a2 - b2);
+  r = a2 - b2;
   p = a2 * b2;
-  f = a2 / b2;
-  cout << s << " " << r << " " <<  p <<  " " << f;
-  
-	
+  f = (float)a2 / b2;
+  cout << "\nCумма=" << s << "\nРазность=" << r << "\nПроизведение=" <<  p <<  "\nЧастное=" << f;
 	return 0;
 }

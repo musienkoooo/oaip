@@ -5,9 +5,10 @@ int main()
 {
 	int d;
 	float L;
+	const float pi = 3.14;
+	cout << "d=";
 	cin >> d;
-	L=3.14*d;
-	cout << L;
-	
+	L=pi * d;
+	cout << "L = pi * d = " << L;
 	return 0;
 }

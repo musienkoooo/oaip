@@ -1,0 +1,22 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+   setlocale(LC_ALL, "Russian");
+   int a, b, c, ac, bc, s;//ac-расстояние от А до С; bc - от B до C; s-сумма длин этих отрезков
+   cout << "A=";
+   cin >> a;
+   cout << "B=";
+   cin >> b;
+   cout << "C=";
+   cin >> c;
+   ac=abs(c-a);
+   bc=abs(c-b);
+   cout << "AC=" << ac;
+   cout << "\nBC=" << bc;
+   s=ac+bc;
+   cout << "\nСумма длин отрезков AC и BC = " << s;
+    return 0;
+}

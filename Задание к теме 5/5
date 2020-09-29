@@ -24,7 +24,7 @@ int main()
             c=sqrt(pow((x3-x1),2)+pow((y3-y1),2));
                cout << "Стороны треугольника = " << a << "; " << b << "; " << c;
              P=a+b+c;
-             p=float(P/2);
+             p=(float)P/2;
               S=sqrt(p*(p-a)*(p-b)*(p-c));
               cout << "\nP=" << P << "\nS=" << S;
 

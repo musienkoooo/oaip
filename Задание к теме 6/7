@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int A, b, c;
+	cout << "A = ";
+	cin >> A;
+	b = A * A*A;
+	c = b * b;
+	A = c * c;
+	A = A * b;
+	cout << "\nA^15 = " << A;
+	return 0;
+}

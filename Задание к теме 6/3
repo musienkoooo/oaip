@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int a, b, c, p, t;
+	cout << "Enter A: ";
+	cin >> a;
+	cout << "Enter B: ";
+	cin >> b;
+	cout << "Enter C: ";
+	cin >> c;
+	t = c;
+	c = a;
+	p = b;
+	b = t;
+	a = p;
+
+	cout << "Novoe A= " << a << "\nNovoe B= " << b << "\nNovoe C= " << c;
+
+}

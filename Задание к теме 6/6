@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int A, b;
+	cout << "A = ";
+	cin >> A;
+	A = A * A;
+	b = A * A;
+	A = b * b;
+	cout << "\nA^8 = " << A;
+	return 0;
+}

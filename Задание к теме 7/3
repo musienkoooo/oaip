@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	float x, y, a;
+	cout << "Kolichestvo kg konfet= ";
+	cin >> x;
+	cout << "Ih stoimist= ";
+	cin >> a;
+	cout << "Stoimost 1 kg= " << a / x;
+	cout << "\nNovoe kolichestvo kg konfet= ";
+	cin >> y;
+	cout << "Ih novaya stoimost= " << y * a / x;
+}

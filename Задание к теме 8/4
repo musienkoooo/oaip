@@ -1,0 +1,12 @@
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int a, b, c;
+	cout << "Введите число: ";
+	cin >> a;
+	b = a % 10;
+	c = a / 10;
+	a = 10 * b + c;
+	cout << "Изменённое число: ";
+	cout << a;
+}

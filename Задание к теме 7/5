@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	float a, x, b;
+	cout << "A*x+B=0, A<>0";
+	cout << "\nA=";
+	cin >> a;
+	cout << "B=";
+	cin >> b;
+	x = -b / a;
+	cout << "x=" << x;
+}

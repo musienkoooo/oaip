@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	float v1, v2, s, t;
+	cout << "Скорость первого автомобиля=";
+	cin >> v1;
+	cout << "Скорость второго автомобиля=";
+	cin >> v2;
+	cout << "Расстояние между ними изначально=";
+	cin >> s;
+	cout << "Количество часов=";
+	cin >> t;
+	cout << "Расстояние между ними будет=" << t * (v1 + v2) + s;
+}

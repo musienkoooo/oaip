@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int y;
+	float x;
+	cout << "Размер файла в байтах=";
+	cin >> x;
+	y = x / 1000;
+	cout << "Количество полных байт, занимаемых файлом=";
+	cout << y;
+}

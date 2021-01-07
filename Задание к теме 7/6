@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+	float x, y, a1, b1, c1, a2, b2, c2, a, b, c;
+	cout << "a1*x+b1*y=c1" << "\na2*x+b2*y=c2";
+	cout << "\na1=";
+	cin >> a1;
+	cout << "b1=";
+	cin >> b1;
+	cout << "c1=";
+	cin >> c1;
+	cout << "a2=";
+	cin >> a2;
+	cout << "b2=";
+	cin >> b2;
+	cout << "c2=";
+	cin >> c2;
+	a = a1;
+	b = b1;
+	c = c1;
+	a1 = a1 * a2;
+	b1 = b1 * a2;
+	c1 = c1 * a2;
+	a2 = a2 * a1;
+	b2 = b2 * a1;
+	c2 = c2 * a1;
+	if (b1 >= b2) {
+		b1 = b1 - b2;
+		c1 = c1 - c2;
+	}
+	else {
+		b1 = b2 - b1;
+		c1 = c2 - c1;
+	}
+	y = c1 / b1;
+	x = (c - y * b) / a;
+	cout << "x=" << x << "\ny=" << y;
+}

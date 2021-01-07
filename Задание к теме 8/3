@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int c;
+	float a, b;
+	cout << "А=";
+	cin >> a;
+	cout << "B=";
+	cin >> b;
+	c = a / b;
+	cout << "Длина незанятой части отрезка А отрезками В: ";
+	cout << a - b * c;
+}

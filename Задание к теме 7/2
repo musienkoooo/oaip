@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+int main() {
+	float x, y;
+	const float pi = 3.14;
+	cout << "Znachenie ugla v radianah: ";
+	cin >> x;
+	y = x * 180 / pi;
+	cout << "Znachenie ugla v gradusah: ";
+	cout << y;
+}

@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int d, a, b, c;
+	cout << "Образуют ли цифры данного трёхзначного числа возраст. или убыв. последовательность?";
+	cout << "\nВведите число : ";
+	cin >> a;
+	b = a % 10;
+	a = a / 10;
+	c = a % 10;
+	d = a / 10;
+	if (((d < c) && (c < b)) || ((d > c) && (c > b))) {
+		cout << "Да";
+	}
+	else {
+		cout << "Нет";
+	}
+}

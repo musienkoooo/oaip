@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int A, B, C;
+	cout << "Справедливо ли двойное неравенство A < B < С?";
+	cout << "\nA = ";
+	cin >> A;
+	cout << "B = ";
+	cin >> B;
+	cout << "C = ";
+	cin >> C;
+	if ((A < B) && (B < C)) {
+		cout << "Да";
+	}
+	else {
+		cout << "Нет";
+	}
+}

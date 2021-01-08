@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int A, B, C, d, e;
+	cout << "Сторона прямоугольника A = ";
+	cin >> A;
+	cout << "Сторона прямоугольника B = ";
+	cin >> B;
+	cout << "Сторона квадрата С = ";
+	cin >> C;
+	d = A / C;
+	e = B / C;
+	cout << "Количество квадратов со стороной С на прямоугольнике AxB: ";
+	cout << d * e;
+	cout << "\nПлощадь незанятой части прямоугольника = " << A * B - d * e*C*C;
+}

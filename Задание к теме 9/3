@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int K, N;
+	cout << "Введите номер дня года: ";
+	cin >> K;
+	cout << "Введите день недели 1 января: ";
+	cin >> N;
+	cout << "Номер дня недели: ";
+	cout << (N + K - 2) % 7 + 1;
+}

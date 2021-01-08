@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int d, a, b, c;
+	cout << "Является ли треугольник со сторонами a, b и c прямоугольным?";
+	cout << "\nа = ";
+	cin >> a;
+	cout << "b = ";
+	cin >> b;
+	cout << "c = ";
+	cin >> c;
+	if (c*c == a * a + b * b) {
+		cout << "Да";
+	}
+	else {
+		cout << "Нет";
+	}
+}
+7

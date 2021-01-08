@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int A, B;
+	cout << "Справедливы ли неравенства A < 2 и B <= 3?";
+	cout << "\nA = ";
+	cin >> A;
+	cout << "B = ";
+	cin >> B;
+	if ((A < 2) && (B <= 3)) {
+		cout << "Да";
+	}
+	else {
+		cout << "Нет";
+	}
+}

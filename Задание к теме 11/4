@@ -1,0 +1,27 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int x, y;
+	cout << "Введите координаты точки по оси Ox: ";
+	cin >> x;
+	cout << "Введите координаты точки по оси Oy: ";
+	cin >> y;
+	if (x > 0) {
+		if (y > 0) {
+			cout << "    Точка находится в 1 четверти.";
+		}
+		else {
+			cout << "    Точка находится в 4 четверти.";
+		}
+	}
+	else {
+		if (y > 0) {
+			cout << "    Точка находится в 2 четверти.";
+		}
+		else {
+			cout << "    Точка находится в 3 четверти.";
+		}
+	}
+}

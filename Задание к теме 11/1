@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int a, b;
+	cout << "Введите А:";
+	cin >> a;
+	cout << "Введите B:";
+	cin >> b;
+	if (a == b) {
+		a = 0;
+		b = 0;
+	}
+	else if (a > b) {
+		b = a;
+	}
+	else {
+		a = b;
+	}
+	cout << "A=" << a << "\nB=" << b;
+}

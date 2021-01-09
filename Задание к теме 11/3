@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int a, b, c, m1, m2;
+	cout << "Введите координату А:";
+	cin >> a;
+	cout << "Введите координату B:";
+	cin >> b;
+	cout << "Введите координату C:";
+	cin >> c;
+	m1 = abs(a - b);
+	m2 = abs(a - c);
+	if (m1 > m2) {
+		cout << "   Точка C расположена к точке А ближе, расстояние между ними = " << m2;
+	}
+	else {
+		cout << "   Точка B расположена к точке А ближе, расстояние между ними = " << m1;
+	}
+}

@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int a, b, c, s;
+	cout << "Введите А:";
+	cin >> a;
+	cout << "Введите B:";
+	cin >> b;
+	cout << "Введите C:";
+	cin >> c;
+	if ((a + b >= b + c) && (a + b >= a + c)) {
+		s = a + b;
+	}
+	if ((b + c >= a + b) && (b + c >= a + c)) {
+		s = b + c;
+	}
+	if ((a + c >= a + b) && (a + c >= b + c)) {
+		s = a + c;
+	}
+	cout << "Сумма двух наибольших из них = " << s;
+}

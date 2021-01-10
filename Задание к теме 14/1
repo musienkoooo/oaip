@@ -1,0 +1,19 @@
+#include<iostream>
+#include <cmath> 
+#include<locale>
+using namespace std;
+int main() {
+setlocale(LC_ALL, "RUS");
+int a, b, i, j;
+cout << "Введите A: ";
+cin >> a;
+cout << "Введите B: ";
+cin >> b;
+ for (i = a; i <= b; i++)
+    {
+        cout << endl;
+        for (j = 1; j <= i; j++){
+            cout << " " << i;
+        }
+    }
+}

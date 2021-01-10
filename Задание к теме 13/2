@@ -1,0 +1,15 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+setlocale(LC_ALL, "RUS");
+float i, n, p;
+cout << "Введите N: ";
+cin >> n;
+p=1;
+for (i = 1; i <= n; i++)
+    {
+    p=p*(1+i/10);
+    }
+    cout << "Произведение = " << p;
+}

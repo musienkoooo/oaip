@@ -1,0 +1,18 @@
+#include<iostream>
+#include <cmath> 
+#include<locale>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int n, i;
+	float a, p;
+	cout << "Введите N: ";
+	cin >> n;
+	cout << "Введите A: ";
+	cin >> a;
+	for (i = 0; i <= n; i++)
+	{
+		p = p + pow(a, i);
+	}
+	cout << "\nСумма = " << p;
+}

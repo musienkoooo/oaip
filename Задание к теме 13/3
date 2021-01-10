@@ -1,0 +1,16 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int n, i, p;
+	cout << "Введите N: ";
+	cin >> n;
+	while (i < n)
+	{
+		i++;
+		p = p + 2 * i - 1;
+		cout << "\nТекущее значение суммы = " << p;
+	}
+	cout << "\nКвадрат числа = " << p;
+}

@@ -1,0 +1,26 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int a, b;
+	cout << "Введите A: ";
+	cin >> a;
+	cout << "Введите B: ";
+	cin >> b;
+	while ((b > 0) && (a > 0)) {
+		if (a > b) {
+			a = a - b;
+		}
+		else {
+			b = b - a;
+		}
+	}
+
+	if (a > b) {
+		cout << "НОД(А,В) = " << a;
+	}
+	else {
+		cout << "НОД(А,В) = " << b;
+	}
+}

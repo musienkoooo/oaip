@@ -3,7 +3,7 @@
 using namespace std;
 int main() {
 setlocale(LC_ALL, "RUS");
-int n, a, x, y, k;
+int n;
 cout << "Введите размер массива - N: ";
 cin >> n;
 int arr[n];

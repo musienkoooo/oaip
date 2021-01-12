@@ -1,0 +1,22 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+setlocale(LC_ALL, "RUS");
+int n, i, min;
+cout << "Введите размер массива - N: ";
+cin >> n;
+int a[n];
+for (int i = 1; i <= n; i++) {
+            cout << "Введите элемент: ";
+            cin >> a[i];
+}
+min=a[2];
+    for (i = 4; i <= n; i++) {
+    if ((i%2==0)&&(a[i]<min)){
+        min=a[i];
+    } 
+    }
+           cout << "Минимальный элемент массива с чётным номером - " << min;
+    
+}

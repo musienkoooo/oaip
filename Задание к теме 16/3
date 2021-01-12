@@ -1,0 +1,22 @@
+#include<iostream>
+#include<locale>
+#include <cmath>
+using namespace std;
+int main() {
+setlocale(LC_ALL, "RUS");
+int n, a, b, i;
+cout << "Введите размер массива - N: ";
+cin >> n;
+cout << "Введите его первый элемент - A: ";
+cin >> a;
+cout << "Введите его второй элемент - B: ";
+cin >> b;
+int arr[n];
+cout << a << "; " << b << "; ";
+for (int i = 1; i <= n-2; i++) {
+            arr[i]=a+b;
+            a=b;
+            b=arr[i];
+            cout << arr[i]<< "; ";
+        }
+}

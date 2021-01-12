@@ -1,0 +1,16 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int p, k;
+	float s;
+	cout << "Введите количество проентов - P, на которое каждый месяц увеличивается вклад (0<P<25): ";
+	cin >> p;
+	s = 1000;
+	while (s <= 1100) {
+		s = s + s / 100 * p;
+		k = k + 1;
+	}
+	cout << "Количество месяцев = " << k << " Итоговый размер вклада " << s;
+}

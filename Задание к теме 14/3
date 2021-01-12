@@ -1,0 +1,14 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+	setlocale(LC_ALL, "RUS");
+	int n, i, s;
+	cout << "Введите N: ";
+	cin >> n;
+	while (s <= n) {
+		i++;
+		s = s + i;
+	}
+	cout << "Наименьшее целое К = " << i << "\nСумма = " << s;
+}

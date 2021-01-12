@@ -1,0 +1,23 @@
+#include<iostream>
+#include<locale>
+using namespace std;
+int main() {
+setlocale(LC_ALL, "RUS");
+int n, k, l, i;
+float s;
+cout << "Введите размер массива - N: ";
+cin >> n;
+cout << "Введите K: ";
+cin >> k;
+cout << "Введите L: ";
+cin >> l;
+int arr[n];
+for (int i = 1; i <= n; i++) {
+            cout << "Введите элемент: ";
+            cin >> arr[i];
+}
+    for (i = k; i <= l; i++) {
+    s=s+arr[i];        
+    }
+cout << "Среднее арифметическое элементов с номерами от K до L = " << s/(l-k+1);
+}

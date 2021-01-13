@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+int main(){
+int n, i, t;
+cout << "Введите размер массива - N: ";
+cin >> n;
+int a[n];
+for (int i = 1; i <= n; i++) {
+            cout << "Введите элемент массива A: ";
+            cin >> a[i];
+        }
+int b[n];        
+for (int i = 1; i <= n; i++) {
+            cout << "Введите элемент массива B: ";
+            cin >> b[i];
+        }
+    for (int i = 1; i <= n; i++){
+        t=a[i];
+        a[i]=b[i];
+        b[i]=t;
+    }
+    cout << "Массив А:  ";
+       for (int i = 1; i <= n; i++){
+        cout << a[i] << "; ";   
+       }
+    cout << "\nМассив В:  ";
+       for (int i = 1; i <= n; i++){
+        cout << b[i] << "; ";   
+       }
+}

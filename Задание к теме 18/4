@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+int main(){
+int n, i, max, nmax, min, nmin;
+cout << "Введите размер массива - N: ";
+cin >> n;
+int a[n];
+for (int i = 1; i <= n; i++) {
+            cout << "Введите элемент массива: ";
+            cin >> a[i];
+        }
+max=a[1];
+min=a[1];
+
+    for (int i = 1; i <= n; i++){
+       if (a[i]>max){
+           max=a[i];
+           nmax=i;
+       }
+    }
+    
+    for (int i = 1; i <= n; i++){
+       if (a[i]<min){
+           min=a[i];
+           nmin=i;
+       }
+    }
+cout << "max=" << max << "min=" << min;     
+    if (nmax<nmin){ 
+    for (int i = nmax+1; i < nmin; i++){
+           a[i]=0;
+    }
+    } else {
+        for (int i = nmin+1; i < nmax; i++){
+           a[i]=0;
+    }
+    }
+    
+    
+    cout << "\nНовый массив:  ";
+       for (int i = 1; i <= n; i++){
+        cout << a[i] << "; ";   
+       }
+}

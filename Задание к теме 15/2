@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int Sign(float &X){
+    if (X<0)
+    X=-1;
+    if (X==0)
+    X=0;
+    if (X>0)
+    X=1;
+       return X;
+   }
+int main()
+{
+   
+      float X, A, B;
+		cout << "Введите A:";
+		cin >> A;
+		cout << "Введите B:";
+		cin >> B;
+		X=Sign(A)+Sign(B);
+		cout << "Результат равен: " << X << endl;
+}

@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+float RingS(float &R1, float &R2){
+    float X=3.14*R1*R1-3.14*R2*R2;
+       return X;
+   }
+int main()
+{
+   
+      float S, R1, R2;
+      for (int i = 0; i < 3; i++){
+		cout << "Введите R1:";
+		cin >> R1;
+		cout << "Введите R2:";
+		cin >> R2;
+		S=RingS(R1, R2);
+		cout << "Площадь кольца= " << S << endl;
+        }       
+    
+}  

@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+float Fact2(int &N){
+    int F = 1;
+	if (N%2==0){
+	    for (int i = 1; i <= N/2; i++){
+	        F=F*i*2;
+	    }
+	    }else {
+	      for (int i = 1; i <= N/2; i++){
+	        F=F*(i*2+1);  
+	    }
+	}
+	return F;
+   }
+int main()
+{
+      int n, r;
+		cout << "Введите N:";
+		cin >> n;
+		r=Fact2(n);
+		cout << "Двойной факториал: " << r;
+}  
